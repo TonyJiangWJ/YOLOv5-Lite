@@ -5,3 +5,5 @@ runs
 utils/__pycache__
 utils/wandb_logging/__pycache__
 wandb
+.idea/
+*.pt

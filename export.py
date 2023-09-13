@@ -19,6 +19,8 @@ from utils.activations import Hardswish, SiLU
 from utils.general import set_logging, check_img_size
 from utils.torch_utils import select_device
 
+# no such params: inplace=True,simplify=True
+# python export.py --weights runs\train\exp3\weights\best.pt --img-size 320 320 --device 0 --grid --concat
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', type=str, default=r'C:\Users\chen\Desktop\Model_Zoo\model_zoo/v5lite-e.pt', help='weights path')  # from yolov5/models/

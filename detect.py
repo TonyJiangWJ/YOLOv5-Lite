@@ -145,7 +145,7 @@ def detect(save_img=False):
 
     print(f'Done. ({time.time() - t0:.3f}s)')
 
-
+# python detect.py --weights runs\train\exp2\weights\best.pt --img-size 320 --source K:\YOLOv5-Lite\dataset\images\test\16931775652085.jpg
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str, default='weights/v5lite-s.pt', help='model.pt path(s)')
